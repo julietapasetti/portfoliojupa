@@ -1,0 +1,258 @@
+@import 'reset', 'color';
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  height: 120px;
+  position: sticky;
+  top: 0;
+  background:map-get($colors,"white");
+  padding: 10px;
+  box-shadow: 0px 15px 63px -15px rgba(0, 0, 0, 0.5);
+}
+
+.topmenu {
+  position: relative;
+ 
+  &__logo {
+    float: left;
+    width: 300px;
+  }
+  
+  &__nav {
+    position: absolute;
+    top: 50px;
+    right: 0;
+  
+    li {
+      display: inline-block;
+      background-color:map-get($colors,"primary");
+      margin-left: 10px;
+      padding: 1em;
+  
+      /* font */
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8em;
+      font-weight: bold;
+       }
+      }
+  }
+  
+#nav-1 {
+  background:map-get($colors,"secondary");
+}
+
+.link-1 {
+  transition: 0.1s ease;
+  color:map-get($colors,"white");
+  font-size: 10px;
+  text-decoration: none;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 20px 0;
+  margin: 0 20px;
+
+  &:hover {
+    border-top: 4px solid map-get($colors,"white");
+    border-bottom: 4px solid map-get($colors,"white");
+    padding: 6px 0;
+  }
+}
+
+.subtitle {
+  color:map-get($colors,"primary");
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+/* SLIDER */
+.slider {
+width: 95%;
+margin: auto;
+overflow: hidden;
+
+
+      & ul {
+      display: flex;
+      padding: 0;
+      width: 400%;
+      animation: cambio 15s infinite alternate linear;
+      }
+
+      & li {
+      width: 100%;
+      list-style: none;
+      }
+
+      & img {
+      width: 100%;
+      }
+
+    @keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+    }
+}
+/* HOLA SECTION */
+.presentacion {
+padding: 50px;
+column-count: 2;
+column-gap: 50px;
+text-align: left;
+align-items: center;
+
+
+      &__title {
+      padding: 30px 0px 80px 0px;
+      color:map-get($colors,"primary");
+      font-family: 'Montserrat', sans-serif;
+      margin: auto;
+      }
+
+      &__par {
+      text-align: justify;  
+      color: map-get($colors,"gray");
+      margin: auto;
+      }
+
+      &__par-white {
+      color:map-get($colors,"secondary");
+      font-weight: bold;
+      margin: auto;
+      }
+
+}
+
+/* SERVICIO SECTION */
+.servicio {
+width: 100%;
+height: auto;
+
+
+  &__container {
+  width: 95vw;
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+  &__caja {
+  background-color:map-get($colors,"white");
+  margin: 20px 20px;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  }
+
+  &__caja p {
+  margin-top: 48%;
+  }
+
+}
+.corporativo {
+background-color:map-get($colors,"primary");
+}
+
+.editorial {
+background-color:map-get($colors,"green");
+}
+
+.packaging {
+background-color:map-get($colors,"violet");
+}
+
+.footer {
+padding: 20px 0px 20px 0px;
+background: linear-gradient(45deg,#F8ABE8 25%, #fad2ec 50%,#F8ABE8 100%);
+text-align: center;
+width: 100%;
+}
+
+.form1 {
+width: 300px;
+height: auto;
+margin-bottom: 3px;
+margin: 50px;
+padding: 10px;
+border: solid 0.5px map-get($colors,"secondary");
+display: block;
+margin-left: auto;
+margin-right: auto;
+line-height: 25px;
+}
+
+.tablero {
+display: grid;
+grid-template-columns: repeat(3, 250px);
+grid-gap: 5px;
+justify-content: center;
+}
+
+.item {
+border-radius: 5px;
+padding: 10px;
+background:map-get($colors,"white");
+}
+
+.item img {
+max-width: 100%;
+}
+
+.level-1 {
+grid-row-end: span 3;
+}
+
+.level-2 {
+grid-row-end: span 2;
+}
+
+.level-3 {
+grid-row-end: span 1;
+}
+
+.galeria {
+	width: 800px;
+	margin: auto;
+	overflow: hidden;
+	img {
+		float: left;
+		width: calc(25% - 30px);
+		margin: 15px;
+		height: auto;
+	}
+}
+
+
+
