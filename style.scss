@@ -3,6 +3,7 @@
 
 
 body {
+  height:100%;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -49,7 +50,7 @@ header {
 }
 
 .link-1 {
-  transition: 0.1s ease;
+  transition: 0.02s ease;
   color:map-get($colors,"white");
   font-size: 10px;
   text-decoration: none;
@@ -153,6 +154,7 @@ align-items: center;
 .servicio {
 width: 100%;
 height: auto;
+padding: 58px 0px 58px 0px;
 
 
   &__container {
@@ -194,25 +196,18 @@ background-color:map-get($colors,"green");
 background-color:map-get($colors,"violet");
 }
 
+
+
 .footer {
+height: -80px;
 padding: 20px 0px 20px 0px;
 background: linear-gradient(45deg,#F8ABE8 25%, #fad2ec 50%,#F8ABE8 100%);
 text-align: center;
 width: 100%;
+
 }
 
-.form1 {
-width: 300px;
-height: auto;
-margin-bottom: 3px;
-margin: 50px;
-padding: 10px;
-border: solid 0.5px map-get($colors,"secondary");
-display: block;
-margin-left: auto;
-margin-right: auto;
-line-height: 25px;
-}
+
 
 .tablero {
 display: grid;
@@ -244,6 +239,7 @@ grid-row-end: span 1;
 }
 
 .galeria {
+  padding: 50px 0px 115px 0px;
 	width: 800px;
 	margin: auto;
 	overflow: hidden;
@@ -253,6 +249,68 @@ grid-row-end: span 1;
 		margin: 15px;
 		height: auto;
 	}
+}
+
+/* CONTACTO */
+.formulario {
+  
+  background-image: url(imagenes/web_jupa02.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  padding: 75px 0px 75px 0px;
+
+
+  form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+  h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+  input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size:12px;
+  border: none;
+}
+
+ textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 12px;
+  border: none;
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#botton {
+  background: #31384A;
+  color: #fff;
+  padding: 20px;
+}
+
+#boton:hover {
+  cursor: pointer;
+}
+
 }
 
 
@@ -290,5 +348,9 @@ grid-row-end: span 1;
       display: block;
       width: 100%;
       padding: 20px;
+    }
+
+    .form {
+      width: 100%;
     }
 }
